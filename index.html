@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa del Mar | Beach Bar & Restaurant - Θίνες</title>
+    <!-- Google Fonts -->
+    <!-- Retro Surf Google Fonts (Oswald + Poppins) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Σύνδεση με το εξωτερικό αρχείο CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">Casa del Mar</a>
+        <div class="nav-links">
+            <a href="#home"><span class="el">Αρχική</span><span class="en">Home</span></a>
+            <a href="menu.html"><span class="el">Μενού</span><span class="en">Menu</span></a>
+            <a href="#location"><span class="el">Τοποθεσία</span><span class="en">Location</span></a>
+            <button id="lang-toggle" class="lang-btn">🇬🇧 EN</button>
+        </div>
+    </nav>
+
+    <!-- Floating Social & Contact Buttons -->
+    <div class="floating-actions">
+        <a href="tel:+306987057752" class="float-btn phone" title="Καλέστε μας"><i class="fas fa-phone"></i></a>
+        <a href="https://instagram.com/casadelmarthines" target="_blank" class="float-btn insta" title="Instagram"><i
+                class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Casa del Mar</h1>
+        <p>
+            <span class="el">Η απόλυτη εμπειρία χαλάρωσης και γεύσης στην πανέμορφη παραλία των Θινών.</span>
+            <span class="en">The ultimate relaxation and taste experience on the beautiful Thines beach.</span>
+        </p>
+        <a href="menu.html" class="btn">
+            <span class="el">Δειτε το Μενου</span>
+            <span class="en">View Menu</span>
+        </a>
+    </section>
+
+    <!-- Photo Carousel Section -->
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="image/cocktail.jpg" alt="Παραλία">
+            </div>
+            <div class="carousel-slide">
+                <img src="image/cocktail2.jpg" alt="Cocktail">
+            </div>
+            <div class="carousel-slide">
+                <img src="image/fish.jpg" alt="Φαγητό">
+            </div>
+            <div class="carousel-slide">
+                <img src="image/beach.jpg" alt="Παραλία">
+            </div>
+            <div class="carousel-slide">
+                <img src="image/beach2.jpg" alt="Παραλία">
+            </div>
+            <div class="carousel-slide">
+                <img src="image/beach3.jpg" alt="Παραλία">
+            </div>
+            <div class="carousel-slide">
+                <img src="image/coffee.jpg" alt="Παραλία">
+            </div>
+            <div class="carousel-slide">
+                <img src="image/food.jpg" alt="Παραλία">
+            </div>
+            <div class="carousel-slide">
+                <img src="image/food2.jpg" alt="Παραλία">
+            </div>
+
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+            <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+
+            <div class="carousel-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section (Glass) -->
+    <section class="reviews-section">
+        <div class="reviews-glass">
+            <h2 class="section-title" style="margin-bottom: 2rem;">
+                <span class="el" style="color: white;">Τι Λένε Οι Επισκέπτες Μας</span>
+                <span class="en">What Our Guests Say</span>
+            </h2>
+
+            <!-- Εδώ φορτώνει το Widget (Elfsight / Shapo κτλ) -->
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-1fef48fc-2c8d-4640-90a0-736c938658c4" data-elfsight-app-lazy></div>
+
+            <!-- Κουμπί για Google Reviews -->
+            <div class="reviews-action">
+                <a href="https://www.google.com/search?sa=X&sca_esv=9c297ecd27ddd5cd&sxsrf=APpeQnvIAI1hap0jzk453IOhfXbK0ddNaA:1782808021976&q=Casa+del+Mar,+Thines+%CE%91%CE%BE%CE%B9%CE%BF%CE%BB%CE%BF%CE%B3%CE%AE%CF%83%CE%B5%CE%B9%CF%82&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2N7G0NDe0NDW2NDGzsDAxNTc02cDI-IpR1zmxOFEhJTVHwTexSEchJCMzL7VY4dzEc_vO7Ty3_9xuIN58bt355nNbz-0837SIlTT1AOoj4kt6AAAA&rldimm=7499719539468845714&tbm=lcl&hl=el-GR&ved=2ahUKEwjq1ei2xa6VAxVPhf0HHYKSLl4Q9fQKegQIahAG&biw=1706&bih=1263&dpr=1#lkt=LocalPoiReviews"
+                    target="_blank" class="btn-google">
+                    <i class="fab fa-google"></i>
+                    <span class="el">Δειτε ολες τις κριτικες στο Google</span>
+                    <span class="en">View all Google Reviews</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Footer -->
+    <footer class="modern-footer" id="location">
+        <div class="footer-top">
+            <!-- Στήλη 1: Λογότυπο & Social Media -->
+            <div class="footer-col brand-col">
+                <h2>Casa del Mar</h2>
+                <p>
+                    <span class="el">Η απόλυτη εμπειρία χαλάρωσης και γεύσης στην πανέμορφη παραλία των Θινών.</span>
+                    <span class="en">The ultimate relaxation and taste experience on the beautiful Thines beach.</span>
+                </p>
+                <div class="footer-socials">
+                    <a href="https://instagram.com/casadelmarthines" target="_blank" title="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com/casadelmarthines" target="_blank" title="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://tripadvisor.com" target="_blank" title="TripAdvisor"><i
+                            class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+
+            <!-- Στήλη 2: Στοιχεία Επικοινωνίας -->
+            <div class="footer-col contact-col">
+                <h3>
+                    <span class="el">Επικοινωνία</span>
+                    <span class="en">Contact</span>
+                </h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> <span class="el">Παραλία Θινών, Βαρθολομιό</span><span
+                            class="en">Thines Beach, Vartholomio</span></li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+306987057752">+30 6987057752</a></li>
+                    <li><i class="fas fa-clock"></i> 10:00 - 22:00</li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:info@casadelmarthines.gr">info@casadelmar.gr</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Στήλη 3: Χάρτης -->
+            <div class="footer-col map-col">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12604.914753868074!2d21.205887783907404!3d37.83153177893666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1360b184b4816cbb%3A0x68145b2f9918c292!2sCasa%20del%20Mar%2C%20Thines!5e0!3m2!1sel!2sgr!4v1781719469107!5m2!1sel!2sgr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" width="100%" height="100%"
+                    style="border:0; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Κάτω Μπάρα (Νομικά στοιχεία & Copyright) -->
+        <div class="footer-bottom">
+            <div class="legal-info">
+                <p>
+                    <span class="el">Ο καταναλωτής δεν έχει υποχρέωση να πληρώσει εάν δεν λάβει το νόμιμο παραστατικό
+                        στοιχείο.</span>
+                    <span class="en">Consumer is not obliged to pay if the notice of payment has not been
+                        received.</span>
+                </p>
+                <p>
+                    <span class="el">Αγορανομικός Υπεύθυνος: Ντόλας Χρήστος</span>
+                    <span class="en">Responsible by law: Ntolas Christos</span>
+                </p>
+            </div>
+            <div class="copyright">
+                <p>© 2026 Casa del Mar, Thines. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Σύνδεση με το εξωτερικό αρχείο JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
